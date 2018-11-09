@@ -1,0 +1,51 @@
+<html>
+  <head>
+  <title>Github</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <style>
+
+    body {
+      font-family: 'Roboto'
+    }
+
+    #tip-box {
+      font-size: 12px;
+    }
+
+  </style>
+  <body>
+    <h3>Repo</h3>
+    <div id="tip-box" addr="abc123">
+      Tips received: 3.4 ETH<br /><br />
+      <button id="show" src="res/button.png">Tip me!</button>
+    </div>
+  </body>
+  <dialog id="dialog" style="text-align: center;">
+    How much do you want to tip &lt;PROJECT&gt;?
+    <h3>0.005 ETH (~ 1 USD)</h3>
+    <p>
+      0 ETH <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> 0.1 ETH
+    </p>
+    <p>
+      <button id="tip">Tip</button>
+      <button id="cancel">Cancel</button>
+    </p>
+
+  </dialog>
+  <script>
+    let dialog = document.querySelector("#dialog")
+    document.querySelector("#show").addEventListener('click', (e) => {
+      let address = document.querySelector("#tip-box").getAttribute("addr")
+      console.log("Address:", address)
+      dialog.show()
+    })
+    document.querySelector("#cancel").addEventListener('click', (e) => {
+      dialog.close()
+    })
+    document.querySelector("#tip").addEventListener('click', (e) => {
+      window.open("/index.html", "tip")
+    })
+
+  </script>
+</html>

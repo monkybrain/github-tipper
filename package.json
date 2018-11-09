@@ -1,0 +1,10 @@
+{
+  "name": "tip",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "keythereum": "^1.0.4",
+    "web3": "^1.0.0-beta.36"
+  }
+}
