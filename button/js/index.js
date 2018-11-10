@@ -1,6 +1,7 @@
 const Web3 = require('web3')
 const querystring = require('querystring')
 const style = require('./style.js')
+const util = require('./util.js')
 
 const PROVIDER = "https://ropsten.infura.io/0pzfHdAhsqakqtBk8Hs6"
 const web3 = new Web3(PROVIDER)
@@ -18,16 +19,19 @@ const init = async function() {
 
   // Get address
   let address = box.getAttribute("address")
-  console.log(address)
 
+  // Update balance
   let balance = await getBalance(address)
   box.innerHTML = `tip | ${balance}`
 
+  // Add click listener
   box.addEventListener('click', () => {
     params = {action: "tip", to: address, value: 0.01}
     let qs = querystring.stringify(params)
     window.open(`/app/index.html?${qs}`, 'github-tipper')
   })
+
+  console.log(util.getGithubInfo())
 
 }
 
