@@ -20,3 +20,7 @@ exports.update = async function() {
   document.querySelector("#text-funds").innerHTML = balance
 
 }
+
+document.querySelector('#button-addFunds').addEventListener('click', () => {
+  ethereum.addFunds()
+})

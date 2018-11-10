@@ -2,24 +2,29 @@ body {
   font-family: 'Roboto'
 }
 
-.button {
-  margin-left: 18px;
-  margin-top: 6px;
+#button-addFunds {
+  background: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
 }
 
 #div-status {
   font-size: 12px;
 }
 
-#div-generating {
-  height: 100%;
-  width: 100%;
-  font-size: 24px;
-}
-
-#text-generating {
+#div-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 16px;
+  text-align: center;
 }
