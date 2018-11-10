@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto'
+}
+
+.button {
+  margin-left: 18px;
+  margin-top: 6px;
+}
+
+#div-status {
+  font-size: 12px;
+}
+
+#div-generating {
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+}
+
+#text-generating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

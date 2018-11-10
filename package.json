@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "ethereumjs-wallet": "^0.6.2",
     "keythereum": "^1.0.4",
     "web3": "^1.0.0-beta.36"
   }
