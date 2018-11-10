@@ -1,6 +1,3 @@
 # Github Crypto Tipper
 
-<button id="github-tipper" address="0x05D069EDc8CC1c559e4482Bec199c13547455208"></button>
-<script>alert("fisk")</script>
-<!-- <script src="https://raw.githubusercontent.com/monkybrain/github-tipper/master/button/button.js">
-</script> -->
+[tip]("http://localhost:8000/app/index.html/?action=tip&value=0.0.1&to=0x05D069EDc8CC1c559e4482Bec199c13547455208")
